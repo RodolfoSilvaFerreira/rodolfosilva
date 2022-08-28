@@ -81,7 +81,7 @@ header p{
     width: 100%;
     font-family: 'ubuntu';
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: auto;
     margin-right: 50px;
     
@@ -90,11 +90,11 @@ header p{
     width: 100%;
 }
 .oqueaprendi{
-    text-align: center;
+    text-align: justify;
     color: white;
     font-family: 'ubuntu';
     padding: 15px;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -108,7 +108,9 @@ header p{
     margin-bottom: 70px;
     margin-top: 50px;
 }
-.video{
+.video iframe{
+    width: 780px;
+    height: 440px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, 0.500);
     margin-top: 2%;
 }
@@ -116,15 +118,27 @@ header p{
 footer{
     background-color: white;
     font-family: 'ubuntu';
-    font-size: 1.5em;
+    font-size: 1em;
     color: #3C096C;
     text-align: center;
+    text-align: justify;
 }
 
 #footer{
     padding: 50px;
     padding-bottom: 150px;
     margin-inline: 10%;
+}
+#footer h2{
+    text-align: center;
+}
+.aviso{
+    text-align: center;
+    background-color: #3C096C;
+    color: #FF9100;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 @media (max-width: 785px) {
@@ -138,7 +152,56 @@ footer{
         flex-wrap: wrap;
         gap: 10px;
     }
+    nav a{
+        margin-inline: 1px;
+    }
     header h1{
         font-size: 6em;
     }
+    .video iframe{
+        width: 380px;
+        height: 215px;
+    }
+}
+
+@media (max-width: 390px) {
+    #bemvindo h1{
+        font-weight:700;
+        font-size: 5em;
+        margin-bottom: 1px;
+    }
+    .sobremim{
+        flex-direction: column;
+        width: 375px;
+        justify-content: center;
+    }
+    .sobremimtexto{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .sobremimimagem img{
+        width: 100%;
+        
+    }
+    #menu{
+        width: 100%;
+    }
+    nav a{
+        margin-inline: 1px;
+        width: 30%;
+    }
+    header h1{
+        font-size: 6em;
+    }
+    #footer h2{
+        font-size: 1.2m ;
+    }
+    #footer p{
+        font-size: 0.5em;
+    }
+    .video iframe{
+        width: 280px;
+        height: 160px;
+    }
+
 }
